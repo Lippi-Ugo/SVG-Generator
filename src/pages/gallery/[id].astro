@@ -62,12 +62,12 @@ try {
 // }
 ---
 
-<Layout title={svg ? svg.nom : "SVG Details"}>
+<Layout title={svg ? svg.name : "SVG Details"}>
     <div class="flex w-full h-full">
         <div
             id="svg-preview"
             class="card bg-base-300 rounded-box grid h-full w-3/4 grow place-items-center"
-            set:html={svg?.code_svg}
+            set:html={svg?.svg}
         />
         <div class="divider divider-horizontal"></div>
         <div
