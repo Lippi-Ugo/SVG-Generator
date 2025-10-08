@@ -33,7 +33,7 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22006
         source: "dist/*"
-        target: "/var/www/colle-pratique/"
+        target: "/var/www/collepratique/"
         strip_components: 1
         rm: false
         overwrite: true
@@ -50,4 +50,4 @@ jobs:
           npm ci
           npm install astro
           npm install send server-destroy
-          PORT=8083 pm2 restart colle-pratique || PORT=8083 pm2 start entry.mjs --name colle-pratique
+          PORT=8083 pm2 restart collepratique || PORT=8083 pm2 start entry.mjs --name collepratique
