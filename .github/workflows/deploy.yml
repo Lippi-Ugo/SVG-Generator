@@ -46,7 +46,7 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22006
         script: |
-          cd /var/www/colle-pratique/server
+          cd /var/www/collepratique/server
           npm ci
           npm install astro
           npm install send server-destroy
